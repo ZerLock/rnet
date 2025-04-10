@@ -7,6 +7,7 @@ pub mod client {
 pub mod server {
     pub mod server;
     pub mod udp;
+    pub mod tcp;
 }
 
 pub mod logic {

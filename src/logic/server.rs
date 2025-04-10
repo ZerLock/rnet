@@ -1,5 +1,5 @@
 use crate::shared::packet::Packet;
 
-pub trait ClientLogic {
+pub trait ServerLogic {
     fn handle_request(&self, packet: Packet) -> Option<Packet>;
 }
