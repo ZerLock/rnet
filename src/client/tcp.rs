@@ -32,7 +32,7 @@ impl Client for TcpClient {
 
     fn receive(&mut self, buffer: &mut [u8]) -> Result<usize> {
         if let Some(ref mut stream) = self.stream {
-            Ok(stream.read(buffer)?)
+            Ok(stream.read(buffer).unwrap_or(0))
         } else {
             Ok(0)
         }
