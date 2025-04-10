@@ -1,0 +1,7 @@
+# Compilation
+/target
+/lib
+
+# IDE environment
+/.idea
+/.vscode
